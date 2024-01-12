@@ -386,7 +386,8 @@ body {
     height: 288px;
     display:flex;
     justify-content: space-evenly;
-
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .cards div {
@@ -402,7 +403,7 @@ body {
 .cards div:hover {
     background-color: #2a2a2a;
 }
-
+    
 .cards img {
     height: 175px;
     width: 175px;
@@ -624,6 +625,11 @@ footer {
     background-image: linear-gradient(to bottom right,#af2896,#509bf5);
     height: 4.5rem;
 }
+
+footer:hover {
+    cursor: pointer;
+}
+    
 
 .foot {
     height: 4.5rem;
@@ -891,6 +897,12 @@ footer {
     margin: 0.5rem 4rem;
 }
 
+@media (max-width: 1147px) {
+    .card_links, .cards {
+        flex-wrap: wrap;
+    }
+}
+
 
 @media (max-width: 767px) {
     body {
@@ -905,10 +917,26 @@ footer {
     .login_div {
         margin: 0;
     }
-
-    .card_box {
-        flex-wrap: wrap-reverse;
-        flex-basis: auto;
+    .card_container{
+        flex-grow: 1;
     }
+
+    .card_links {
+        flex-direction: column;
+    }
+    
+    footer {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: wrap;
+    }
+
+    .foot {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
 
   }
