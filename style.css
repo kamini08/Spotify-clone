@@ -1,0 +1,914 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    padding: 0.5rem;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    margin: 0.5rem 0.2rem;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 350px;
+    background-color: #121212;
+    border-radius: 0.5rem 0.5rem;
+}
+
+.main_page {
+    flex: 1;
+    background-color: #121212;
+    border-radius: 0.5rem 0.5rem;
+    overflow: auto;
+    margin: 0.5rem 0.2rem;
+}
+
+.player {
+    position: fixed;
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar {
+    padding: 0.5rem 0.75rem;
+    height: 112px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.nav_opt {
+    height: 2.5rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.nav_bar i, .nav_bar a {
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 1rem;
+    opacity: 0.8;
+}
+
+
+ .nav_bar i,a:hover {
+    opacity: 1;
+ }
+
+.nav_head {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex: 1;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.library {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 8px;
+    align-self: self-start;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.nav_head button {
+    display: flex;
+    align-items: center;
+}
+
+.btn_two {
+    transition: all 0.1s ease-in ;
+}
+
+.btn_two:hover {
+    transform: scale(1.1);
+}
+
+.nav_head p {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.nav_head p:hover {
+    opacity: 1;
+}
+
+.plus {
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    justify-self: end;
+    align-self: baseline;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+}
+
+.plus i{
+    font-weight: 400;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.plus:hover {
+    border-radius: 50%;
+    background-color: #1a1a1a;
+}
+
+.nav_card {
+    height: 212px;
+    overflow: scroll;
+    margin: 4px 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_card div {
+    height: 140px;
+    width: 318px;
+    border-radius: 0.5rem;
+    background-color: #242424;
+    margin: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    }
+
+
+.nav_card p {
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 0 auto;
+    
+}
+
+.nav_card .card_head {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding: 0.4rem auto;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.nav_card button {
+    font-weight: 600;
+    height: 2.2rem;
+    width: fit-content;
+    padding: 0.7rem 0.6rem;
+    font-size: 0.8rem;
+    margin: 1.6rem auto;
+    
+    
+}
+
+.nav_end {
+    height: 100%;
+    bottom: 0%;
+    margin: 0rem 0rem 2rem;
+    padding: 0rem 1.5rem;
+}
+
+.link_sect {
+    height: 7rem;
+    padding: 0rem 0rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+}
+
+.link_sect section {
+    font-size: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.link_sect section div {
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+
+.link_sect span,.cookie {
+    height: 2rem;
+    text-align: center;
+    font-size: 0.7rem;;
+    font-weight: 400;
+    color: white;
+    opacity: 0.7;
+
+}
+
+.nav_end {
+    margin: 1.4rem 0rem;
+    padding: 0rem 1.5rem;
+}
+
+.lng_btn .fa_globe {
+    margin-right: 4px;
+}
+
+.nav_foot {
+    margin-bottom: 32px;
+    padding: 0 0px;
+    height: 2rem;
+    bottom: 0%;
+}
+
+.lng_btn {
+    width: fit-content;
+    display: flex;
+    padding: 4%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    align-items: center;
+    border: 2px white;
+    justify-self: flex-start;
+    cursor: pointer;
+}
+
+.lng_btn:hover {
+    font-weight: 800;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.text-bg-dark {
+    background-color: black !important;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.752);
+}
+
+.lng_btn p {
+    margin-bottom: 0rem;
+}
+
+.sticky_top {
+    display: flex;
+    height: 80px;
+    position: sticky;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem 0.5rem;
+    align-items: center;
+    z-index: 10;
+}
+
+.sticky_top .arrow_btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 50%;
+    padding: 0rem 0.75rem;
+    margin-right: 0.5rem;
+    border: none;
+    opacity: 0.8;
+
+}
+
+.sticky_top button i {
+    color: rgba(255, 255, 255, 0.782);
+    font-weight: 600;
+}
+
+.sticky_top div {
+    display: flex;
+    align-items: center;
+}
+
+.sign_up {
+    height: 3rem;
+    width: 6rem;
+    background-color: #121212;
+    text-align: center;
+    margin: 0.3rem;
+    align-items: center;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.57);
+    font-weight: 700;
+}
+
+
+.sign_up:hover {
+    color: white;
+}
+
+.log_in {
+    height: 3rem;
+    width: 6.75rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+.main_box {
+    background-color: #1a1a1a;
+    height: 1691px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 2rem;
+}
+
+.card_box {
+    height: 1101px;
+    padding: 0.5rem 1.4rem 0rem 1.4rem;
+}
+
+.card_head {
+    height: 3rem;
+    margin: 0rem 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card_head a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.57);
+    text-decoration: none;
+}
+
+.card_head a:hover {
+    text-decoration: underline;
+}
+.card_head .playlist {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.playlist:hover {
+    text-decoration: underline;
+}
+
+.card_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards {
+    height: 288px;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+.cards div {
+    height: 288;
+    width: 198px;
+    display: flex;
+    border-radius: 0.5rem 0.5rem;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    background-color: #121212;
+}
+
+.cards div:hover {
+    background-color: #2a2a2a;
+}
+
+.cards img {
+    height: 175px;
+    width: 175px;
+    border-radius: 0.3rem 0.3rem;
+    align-self: center;
+}
+
+.cards p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.57);
+    margin-bottom: 2%;
+}
+
+.cards .heading {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    padding: 0rem 0rem 0.25rem;
+    margin-top: 2%;
+    overflow: hidden;
+}
+.link_list {
+    margin: 2rem 4.75rem 2rem 1rem;
+    
+}
+
+.link_list ul {
+    list-style-type: none;
+}
+
+.link_list p {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.link_list li {
+    margin: 0.5rem 0rem;
+}
+.link_list a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.699);
+    margin: 1.5rem 0rem;
+    text-decoration: none;
+}
+
+
+.link_list a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.card_foot {
+    height: 462px;
+    padding: 0.5rem 2rem 2.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_links {
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.social_media_bar {
+    height: 330px;
+    margin: 4.2rem 0rem 1.5rem 0rem;
+}
+
+.media_btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #121212;
+    border-radius: 50%;
+    padding: 0rem 0.75rem;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+.media_btn:hover {
+    background-color: rgba(255, 255, 255, 0.463);
+}
+
+.social_media_bar i {
+    color: white;
+}
+
+.song_display {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.song_display img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 4%;
+    margin-right: 1rem;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.song a {
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+
+.song .song_name {
+    font-size: 0.86rem;
+    font-weight: 560;
+}
+
+.song a:hover {
+    text-decoration: underline;
+}
+
+.song_display button {
+    background-color: black;
+    border: none;
+
+}
+
+.song_display button i {
+    color: white;
+}
+
+.player_control {
+    height: 57.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player_icons {
+    height: 2rem;
+    width: 550px;
+    margin: 0.5rem 0rem 0.5rem 7rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.player_icons .play_btn {
+    font-size: 2rem;
+}
+
+.playback_bar {
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.player_icons button {
+    font-size: 1.1rem;
+    margin-right: 2%;
+    background-color: black;
+    border: none;
+}
+
+.player_icons button i {
+    color: rgba(255, 255, 255, 0.803);
+    cursor: default;
+}
+
+.player_icons button i:hover {
+    color: white;
+}
+
+
+.player_opt {
+    width:430px;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    justify-content: flex-end;
+}
+
+.player_opt button {
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    margin-right: 2%;
+    border: none;
+}
+
+.player_opt button i {
+    color: rgba(255, 255, 255, 0.755);
+}
+
+.player_opt button i:hover {
+    color: white;
+}
+
+#play_bar {
+    width: 477px;
+    margin-left: 7rem;
+}
+
+#volume {
+    width: 93px;
+    right: 2rem;
+}
+
+footer {
+    position: sticky;
+    bottom: 0rem;
+    background-image: linear-gradient(to bottom right,#af2896,#509bf5);
+    height: 4.5rem;
+}
+
+.foot {
+    height: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot div {
+    display: flex;
+    height: 5rem;
+    padding: 0.4rem 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    align-items: center;
+    color: white;
+}
+
+.foot p {
+    width: 45rem;
+    margin: 0rem;
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+.foot button {
+    height: 3rem;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header, .header2 {
+    color: white;
+    background-color: black;
+    height: 6rem;
+    display: flex;
+    padding: 1.6rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header div, .header2 div {
+    height: 3rem;
+    padding: 0.1rem;
+    
+}
+
+.header i, .header2 i {
+    font-size: 2rem;
+}
+
+.header p, .header2 p {
+    font-size: 1.2rem;
+    font-weight: 640;
+}
+
+.sign_up_sect{
+    display: flex;
+    justify-content: center;
+    padding: 0.5 rem 4rem;
+    flex-wrap: wrap;
+}
+.sign_up_div, .login_div {
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.sign_up_div .head p {
+    text-align: left;
+    font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+    
+}
+
+.sign_up_div .email, .login_div .email, .login_div .password {
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.sign_up_div #my_form, .login_div #my_form {
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-align: left;
+}
+.email input, .password input {
+    height: 3rem;
+    width: 21rem;
+    border-color: #7e7b7b;
+    background-color: black;
+    color: #ccbfbf;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.email input:hover, .password input:hover {
+    border-color: white;
+    transition-delay: 100ms;
+}
+
+#my_form div a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1ed760;
+    text-decoration-line: underline;
+    
+}
+
+#my_form div {
+    margin: 0.5rem auto; 
+    text-align: left;
+    
+}
+
+#my_form  .next_btn {
+    width: 21rem;
+    height: 3rem;
+    color: black;
+    background-color: #1fdf64;
+    margin: 1rem auto;
+    border-style: none;
+    font-size: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#my_form .next_btn {
+    background-color: #1ed760;
+}
+
+
+
+.sign_up_div .break {
+    width: 21rem;
+    height: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sign_up_div .division {
+    width: 9rem;
+    
+} 
+
+.sign_up_div .break_para {
+    width: 3rem;
+    margin: 0.3rem auto;
+    height: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sign_up_div .sign_up_options, .login_options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    
+}
+
+.sign_up_div .form_btn, .login_div .form_btn {
+    height: 3rem;
+    width: 21rem;
+    margin: 0.3rem auto;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-color: #525151;
+    border-width: 1px;
+    
+}
+
+.sign_up_div .form_btn i, .login_div .form_btn i {
+    width: 4rem;
+    font-size: 1.3rem;
+}
+
+.sign_up_div .form_btn p, .login_div .form_btn p {
+    height: 2rem;
+    margin: 0.5rem 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.sign_up_sect .sign_up_div .form_btn:hover, .login_sect .login_div .form_btn:hover {
+    border-color: white;
+} 
+
+.sign_up_div a, .login_div a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+}
+
+.sign_up_end {
+    padding: 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    color: #7e7b7b;
+}
+.sign_up_end p, a {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.login_sect {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 4rem 0rem 4rem;
+    background-image: linear-gradient(#1a1a1a, black);
+    flex-wrap: wrap;
+}
+.login_div {
+    width: 48rem;
+    background-color: black;
+    border-radius: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+.login_div .head p {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+    margin: 3rem;
+    
+}
+
+.login_div #my_form {
+    width: 21rem;
+    margin: 1rem 13rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+.login_div #my_form p {
+    margin: 0.3rem 0; 
+}
+
+
+.login_div span {
+    width: 38rem;
+    padding: 0 2rem;
+    margin: 0.5rem 4rem;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        flex-shrink: 2;
+    }
+
+    .login_sect {
+        padding: 0;
+        margin: 0;
+    }
+
+    .login_div {
+        margin: 0;
+    }
+
+    .card_box {
+        flex-wrap: wrap-reverse;
+        flex-basis: auto;
+    }
+
+  }
