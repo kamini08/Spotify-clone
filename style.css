@@ -403,7 +403,8 @@ body {
 .cards div:hover {
     background-color: #2a2a2a;
 }
-    
+
+
 .cards img {
     height: 175px;
     width: 175px;
@@ -629,12 +630,10 @@ footer {
 footer:hover {
     cursor: pointer;
 }
-    
 
 .foot {
     height: 4.5rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -643,7 +642,6 @@ footer:hover {
     height: 5rem;
     padding: 0.4rem 1rem;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: first baseline;
     align-items: center;
     color: white;
@@ -684,7 +682,7 @@ footer:hover {
     font-size: 2rem;
 }
 
-.header p, .header2 p {
+.header p, .header2 p, .album_card p {
     font-size: 1.2rem;
     font-weight: 640;
 }
@@ -705,7 +703,7 @@ footer:hover {
     text-align: center;
 }
 
-.sign_up_div .head p {
+.sign_up_div .head h2 {
     text-align: left;
     font-size: 2.7rem;
     font-weight: 900;
@@ -768,7 +766,7 @@ footer:hover {
     justify-content: center;
 }
 
-#my_form .next_btn {
+#my_form .next_btn, .album .album_card .form_btn {
     background-color: #1ed760;
 }
 
@@ -839,16 +837,18 @@ footer:hover {
 
 }
 
-.sign_up_end {
+.sign_up_end, .album_card p {
     padding: 1rem;
     font-size: 0.7rem;
     font-weight: 600;
     text-align: center;
     color: #7e7b7b;
 }
-.sign_up_end p, a {
+.sign_up_end p, a, .album_card a {
     margin: 0;
     font-size: 0.7rem;
+    color: #7e7b7b;
+    text-decoration: none;
 }
 
 .login_sect {
@@ -897,6 +897,92 @@ footer:hover {
     margin: 0.5rem 4rem;
 }
 
+.cards .card_play_btn {
+    position: relative;
+    left: 6rem;
+    bottom: 8rem;
+    font-size: 2.8rem;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0);
+    
+}
+
+.cards .music_card .card_play_btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0);
+    font-size: 3.1rem;
+}
+
+.album {
+    position: absolute;
+    height: 30rem;
+    width: 60rem;
+    top: 10rem;
+    left: 20rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+
+    
+
+.album .album_card {
+    height: 28rem;
+    width: 52rem;
+    margin: 1rem auto;
+    display: flex;
+    background-color: #242424;
+    border-radius: 0.35rem;
+}
+
+.album .album_close {
+    height: 4rem;
+    width: 52rem;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.album .album_close .form_btn {
+    background-color: rgb(0, 0, 0, 0);
+    height: 3rem;
+    width: 10rem;
+}
+
+.album button:hover {
+    cursor: pointer;
+    font-size: large;
+}
+.album .album_card div {
+    height: 26rem;
+    width: 26rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.album .album_card button {
+    height: 3rem;
+    width: 10rem;
+    margin: 0.8rem auto;
+    font-size: 1rem;
+}
+
+.album .album_img img {
+    height: 17rem;
+    width: 17rem;
+    margin-bottom: 2rem;
+    
+}
+
 @media (max-width: 1147px) {
     .card_links, .cards {
         flex-wrap: wrap;
@@ -924,7 +1010,7 @@ footer:hover {
     .card_links {
         flex-direction: column;
     }
-    
+
     footer {
         overflow-x: scroll;
         overflow-y: hidden;
@@ -939,4 +1025,4 @@ footer:hover {
     }
 
 
-  }
+}
